@@ -119,18 +119,4 @@ While Docker is the most popular containerization tool, several alternatives are
 
 ---
 
-## 🤝 Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request.
-
-1. Fork this repository
-2. Create your feature branch: `git checkout -b feature/my-addition`
-3. Commit your changes: `git commit -m 'Add some content'`
-4. Push to the branch: `git push origin feature/my-addition`
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
