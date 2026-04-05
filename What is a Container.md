@@ -24,8 +24,7 @@
 - [Monolithic vs Microservices — Comparison](#-monolithic-vs-microservices--comparison)
 - [Examples](#-examples)
 - [Further Reading](#-further-reading)
-- [Contributing](#-contributing)
-- [License](#-license)
+
 
 ---
 
@@ -166,20 +165,3 @@ Explore the [`examples/`](./examples/) directory for hands-on starter files:
 
 ---
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-1. Fork this repository
-2. Create your branch: `git checkout -b feature/my-topic`
-3. Commit your changes: `git commit -m 'Add explanation for X'`
-4. Push: `git push origin feature/my-topic`
-5. Open a Pull Request
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
