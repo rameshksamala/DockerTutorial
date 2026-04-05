@@ -47,6 +47,7 @@ A Docker container includes all of the following:
 - Applications depended heavily on the **OS and environment**
 - **"Works on my machine"** problems were extremely common
 - **Virtual Machines (VMs)** were the alternative — but heavy and slow
+![Docker Benefits](images/docker-container-bundle.png)
 
 ### ✅ With Docker
 
