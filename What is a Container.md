@@ -2,10 +2,6 @@
 
 > A beginner-to-intermediate guide covering containers, the Docker app lifecycle, and Monolithic vs Microservices architecture.
 
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/container-guide)
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-
 ---
 
 ## 📋 Table of Contents
