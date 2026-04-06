@@ -27,6 +27,14 @@ sudo usermod -aG docker $USER        # run docker without sudo
 | Command | Description |
 |---------|-------------|
 | `docker images` | List local images |
+| `docker docker history <image>` | Show all layers and their sizes |
+| `docker inspect <image>` | Show full image metadata in JSON |
+| `docker pull <image>` | Download image from registry |
+| `docker push <image>` | Upload image to registry |
+| `docker rmi <image>` | Remove a local image |
+| `docker system prune` | Remove all unused images, containers, networks |
+| `docker build --no-cache` | Force full rebuild, ignoring cache |
+| `docker build -t name:tag ` | Build image from Dockerfile in current directory |
 
 ---
 
