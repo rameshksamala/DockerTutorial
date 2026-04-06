@@ -315,25 +315,25 @@ docker rm myoldcontainer
 
 ---
 
-## 14. `docker rmi`
+## 15. `docker cp`
 
 ### 📝 Syntax
 
 ```bash
-docker rmi <image_name_or_id>
-docker rmi -f <image_id>      # Force remove
-docker image prune            # Remove dangling images
-```
+docker cp <local_path> <container_id_or_name>:<container_path>
 
 ### 💡 Explanation
 
-Removes (deletes) one or more Docker images from your local storage.
+The standard way to move files into a running Docker container is the docker cp command
 
 ### ▶️ Example
 
 ```bash
-docker rmi nginx:alpine
+docker cp ./myfile.txt my_container:/tmp/myfile.txt
+
 ```
+
+
 
 ---
 
@@ -355,6 +355,7 @@ docker rmi nginx:alpine
 | 12 | `docker images` | List local images |
 | 13 | `docker rm` | Remove stopped containers |
 | 14 | `docker rmi` | Remove local images |
+| 15 | `docker cp` | Docker for copying files |
 
 ---
 
