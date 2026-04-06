@@ -1,0 +1,5 @@
+# No third-party dependencies for this minimal example.
+# The standard library's http.server is used instead.
+# Add your dependencies here, e.g.:
+# flask==3.0.0
+# requests==2.31.0
