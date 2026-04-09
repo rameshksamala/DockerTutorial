@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+
+  web:
+    build: .                      # Build image from local Dockerfile
+    ports:
+      - '5000:5000'
+    depends_on:
+      - redis                     # Start redis before web
+
+  redis:
+    image: redis:7-alpine         # Official Redis image (alpine = lightweight)
+    # No ports exposed here — web connects internally using the service name

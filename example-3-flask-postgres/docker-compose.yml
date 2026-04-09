@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+
+  web:
+    build: .
+    ports:
+      - '5000:5000'
+    environment:
+      - DB_HOST=db                        # Use service name 'db' as hostname
+      - DB_NAME=${POSTGRES_DB}            # Read from .env file
+      - DB_USER=${POSTGRES_USER}
+      - DB_PASSWORD=${POSTGRES_PASSWORD}
+    depends_on:
+      db:
+        condition: service_healthy        # Wait until DB passes health check
+
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - pgdata:/var/lib/postgresql/data   # Named volume — data persists across restarts!
+    ports:
+      - '5432:5432'                       # Optional: expose so you can connect via pgAdmin
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U ${POSTGRES_USER}']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:                                 # Docker manages this volume on your machine
+
+env_file:
+  - .env                                  # Load variables from .env file

@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    image: python:3.11-slim       # Use official Python image (no Dockerfile needed!)
+    working_dir: /app             # Set working directory inside container
+    volumes:
+      - .:/app                    # Mount current directory into /app
+    ports:
+      - '5000:5000'               # Expose port 5000 to your machine
+    command: >
+      sh -c "pip install -r requirements.txt && python app.py"
