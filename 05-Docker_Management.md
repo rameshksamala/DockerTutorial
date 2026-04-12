@@ -356,6 +356,7 @@ docker cp ./myfile.txt my_container:/tmp/myfile.txt
 | 13 | `docker rm` | Remove stopped containers |
 | 14 | `docker rmi` | Remove local images |
 | 15 | `docker cp` | Docker for copying files |
+| 16 |
 
 ---
 
