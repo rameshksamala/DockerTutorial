@@ -20,6 +20,7 @@
 12. [docker images](#12-docker-images)
 13. [docker rm](#13-docker-rm)
 14. [docker rmi](#14-docker-rmi)
+15. [docker cp](#14-docker-cp)
 
 ---
 
