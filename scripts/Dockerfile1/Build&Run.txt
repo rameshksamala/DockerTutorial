@@ -1,0 +1,15 @@
+# Steps to build the image and run
+docker build -t my-nginx:1.0 .
+docker run -d -p 8080:80 my-nginx
+
+
+# steps to push image to docker hub
+1. Login to Docker Hub
+    $ docker login
+
+2. Tag the Image
+    $ docker tag my-nginx <username>/<repository>:latest
+
+3. Push the Image
+    $ docker push <username>/<repository>:latest
+
