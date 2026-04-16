@@ -1,0 +1,33 @@
+services:
+  # The Web Application
+  web-app:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgres://user:password@db:5432/myapp
+    depends_on:
+      - db
+    networks:
+      - backend
+
+  # The Database
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: myapp
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - backend
+
+# Define persistent storage for the database
+volumes:
+  db-data:
+
+# Define a private network for container communication
+networks:
+  backend:
+    driver: bridge
